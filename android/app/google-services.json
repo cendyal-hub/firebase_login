@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "838995080692",
+    "project_id": "flutterlogin-ed123",
+    "storage_bucket": "flutterlogin-ed123.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838995080692:android:36fc194aa9c9a2a4df75a1",
+        "android_client_info": {
+          "package_name": "com.example.Login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIOjlF6wvpvQY7h4u1W6S_y-V4isn-uFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838995080692:android:8d7c5d77d22b89addf75a1",
+        "android_client_info": {
+          "package_name": "com.example.firebase_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIOjlF6wvpvQY7h4u1W6S_y-V4isn-uFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
