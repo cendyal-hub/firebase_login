@@ -22,7 +22,7 @@ class _MyLoginState extends State<MyLogin> {
     super.dispose();
   }
 
-  Future<void> _Login() async {
+  Future<void> _login() async {
     setState(() {
       _isLoading = true;
       _error = null;
@@ -63,8 +63,30 @@ class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Login page")),
-      body: Center(child: Text("Ini Login Pages")),
+      appBar: AppBar(title: const Text("Login page")),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            TextField(
+              controller: emailCtrl,
+              decoration: const InputDecoration(labelText: 'Email'),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: passCtrl,
+              decoration: const InputDecoration(labelText: 'Password'),
+              obscureText: true,
+            ),
+            const SizedBox(height: 16),
+            if (_error != null) ...[
+              Text(_error!, style: const TextStyle(color: Colors.red)),
+              const SizedBox(height: 8)
+            ],
+            ElevatedButton(onPressed: _isLoading ? null : _login, child: _isLoading ? const CircularProgressIndicator() : const Text('Login'))
+          ],
+        ),
+      ),
     );
   }
 }

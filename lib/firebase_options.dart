@@ -66,4 +66,5 @@ class DefaultFirebaseOptions {
     projectId: 'flutterlogin-ed123',
     storageBucket: 'flutterlogin-ed123.firebasestorage.app',
   );
+
 }
