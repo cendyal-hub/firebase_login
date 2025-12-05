@@ -1,16 +1,40 @@
-# firebase_login
+# Flutter Firebase Login
 
-A new Flutter project.
+Aplikasi Flutter sederhana dengan fitur login menggunakan **Firebase Authentication (Email & Password)**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Fitur
 
-A few resources to get you started if this is your first Flutter project:
+* Login dengan email & password
+* Tampilkan pesan error
+* Loading saat proses login
+* Dialog sukses setelah login berhasil
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Instalasi
+
+```bash
+flutter pub get
+dart pub global activate flutterfire_cli
+flutterfire configure
+```
+
+---
+
+## Menjalankan Aplikasi
+
+```bash
+flutter run
+```
+
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="assets/images/formlogin.png" width="200">
+  <img src="assets/images/formloginfail.png" width="200">
+  <img src="assets/images/formloginsuccess.png" width="200">
+</p>
